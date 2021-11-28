@@ -26,8 +26,10 @@ const sess = {
     })
 };
 
+// login session with cookies
 app.use(session(sess));
 
+// set up template engine
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
